@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Square UI Kit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Square UI -->
+    <link href="css/square-ui.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style>
+        .row{
+            margin: 5px 0;
+        }
+        .form-control {
+            width: auto;
+        }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>
+          <div class="logo"></div>
+          Square UI
+          <small>Free Web User Interface Kit</small>
+        </h1>
+      </div> <!-- /demo-headline -->
+
+      <h1>Basic elements</h1>
+      
+      <h3>Buttons</h3>
+       
+      <div class="row">
+           <div class="col-12">
+                <!-- Standard gray button with gradient -->
+                <button type="button" class="btn btn-default">Default</button>
+
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-primary">Primary</button>
+
+                <!-- Indicates a successful or positive action -->
+                <button type="button" class="btn btn-success">Success</button>
+
+                <!-- Contextual button for informational alert messages -->
+                <button type="button" class="btn btn-info">Info</button>
+
+                <!-- Indicates caution should be taken with this action -->
+                <button type="button" class="btn btn-warning">Warning</button>
+
+                <!-- Indicates a dangerous or potentially negative action -->
+                <button type="button" class="btn btn-danger">Danger</button>
+
+                <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+       </div>
+      <div class="row">
+      
+        <div class="col-3">
+          <a href="#fakelink" class="btn btn-large btn-block btn-primary">Primary Button</a>
+        </div>
+        <div class="col-3">
+          <a href="#fakelink" class="btn btn-large btn-block btn-warning">Warning Button</a>
+        </div>
+        <div class="col-3">
+          <a href="#fakelink" class="btn btn-block btn-large btn-default">Default Button</a>
+        </div>
+        <div class="col-3">
+          <a href="#fakelink" class="btn btn-large btn-block btn-danger">Danger Button</a>
+        </div>
+      </div> <!-- /row -->
+
+      <div class="row">
+        <div class="col-3">
+          <a href="#fakelink" class="btn btn-large btn-block btn-success">Success Button</a>
+        </div>
+        <div class="col-3">
+          <a href="#fakelink" class="btn btn-large btn-block btn-info">Info Button</a>
+        </div>
+        <div class="col-3">
+          <a href="#fakelink" class="btn btn-large btn-block btn-danger disabled">Disabled Button</a>
+        </div>
+        <div class="col-3">
+          <a href="#fakelink" class="btn btn-large btn-block btn-default disabled">Disabled Button</a>
+        </div>
+      </div> <!-- /row -->
+
+      <h3>Nav</h3>
+      <div class="row">
+            <div class="navbar navbar-inverse">
+              <div class="container">
+                <a href="#" class="navbar-brand">Square UI</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse collapse bs-navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li>
+                      <a href="#">Getting started</a>
+                    </li>
+                    <li>
+                      <a href="#">CSS</a>
+                    </li>
+                    <li class="active">
+                      <a href="#">Components</a>
+                    </li>
+                    <li>
+                      <a href="#">JavaScript</a>
+                    </li>
+                    <li>
+                      <a href="#">Customize</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      </div> <!-- /row -->
+        
+      <div class="row">
+        <div class="navbar">
+          <a class="navbar-brand" href="#">Title</a>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      <h3>Form</h3>
+      <div class="row">
+        <form>
+          <fieldset>
+            <legend>Legend</legend>
+            <div class="form-group">
+              <label for="exampleInputEmail">Email address</label>
+              <input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </fieldset>
+        </form>
+      </div> <!-- /row -->
+      
+      <h3>Inline Form</h3>
+      <div class="row">
+           <form class="form-inline">
+              <input type="text" class="form-control" placeholder="Email">
+              <input type="password" class="form-control" placeholder="Password">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-default">Sign in</button>
+            </form>
+      </div> <!-- /row -->
+
+   </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+            
+          </div> <!-- /col-8 -->
+
+          <div class="col-5">
+            <div class="footer-banner">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Load JS here for greater good =============================-->
+    <script src="vendor/jquery/jquery-2.0.3.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>
