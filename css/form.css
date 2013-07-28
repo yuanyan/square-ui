@@ -1,0 +1,50 @@
+input[type=checkbox],
+input[type=radio] {
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    line-height: 1em;
+    margin: 0 8px 0 0;
+    padding: 8px;
+    width: 1em;
+    height: 1em;
+    background: #E0E1E1;
+    border: 2px solid #E0E1E1;
+    -webkit-appearance: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+input[type=radio] {
+    border-radius: 50%;
+}
+
+input[type=checkbox]:after {
+    position: absolute;
+    content: '';
+    left: 10%;
+    top: 10%;
+    height: 40%;
+    width: 80%;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+}
+
+input[type=radio]:after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 50%;
+    margin: -3px 0 0 -3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+    background: #2489C5;
+    border: 2px solid #2489C5;
+}

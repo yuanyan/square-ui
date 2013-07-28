@@ -1,0 +1,53 @@
+.btn, .btn:hover, .btn:focus{
+    border-bottom-width: 5px;
+}
+.btn-small:active, .btn:active, .btn-large:active{
+    margin-top:5px;
+       border-bottom-color: transparent;
+    box-shadow: none;
+}
+
+.btn:active{ 
+    padding-top: 7px;
+    padding-bottom: 4px;
+}
+
+.btn.btn-small:active {
+    padding-top: 4px;
+    padding-bottom: 1px;
+}
+
+.btn.btn-large:active {
+    padding-top: 13px;
+    padding-bottom: 10px;
+}
+
+.btn-default {
+  background-color: #3a3c3c;
+  border-bottom-color: #2e2f2f;
+}
+
+.btn-primary {
+  background-color: #357ebd;
+  border-bottom-color: #3071a9;
+}
+
+.btn-warning {
+  background-color: #eea236;
+  border-bottom-color: #ec971f;
+}
+
+.btn-danger {
+  background-color: #d43f3a;
+  border-bottom-color: #c9302c;
+}
+
+.btn-success {
+  background-color: #4cae4c;
+  border-bottom-color: #449d44;
+}
+
+.btn-info {
+  background-color: #46b8da;
+  border-bottom-color: #31b0d5;
+}
