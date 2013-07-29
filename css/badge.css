@@ -1,3 +1,9 @@
+.badge {
+  color: #999999;
+  border: 1px solid;
+  background-color: transparent;
+}
+
 a.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
   color: #fff;
@@ -5,6 +11,3 @@ a.list-group-item.active > .badge,
 }
 
 
-.badge {
-  border: 1px solid;
-}
