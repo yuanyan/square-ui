@@ -1,0 +1,10 @@
+a.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+  color: #fff;
+  background-color: transparent;
+}
+
+
+.badge {
+  border: 1px solid;
+}

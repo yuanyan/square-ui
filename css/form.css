@@ -1,3 +1,13 @@
+
+input[type=file]::-webkit-file-upload-button {
+    background-color: transparent;
+    border: 1px solid #357ebd;
+    color: #357ebd;
+    padding: 5px;
+    -webkit-appearance: none;
+}
+
+
 input[type=checkbox],
 input[type=radio] {
     font-size: 16px;
@@ -26,8 +36,8 @@ input[type=checkbox]:after {
     top: 10%;
     height: 40%;
     width: 80%;
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
     -webkit-transform: rotate(-45deg);
 }
 

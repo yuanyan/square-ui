@@ -1,6 +1,35 @@
 @import "form.css";
 @import "button.css";
+@import "dropdown.css";
+@import "badge.css";
 
-.navbar, .form-control, .btn {
+code, pre,
+.navbar, .navbar-nav > li > a, .nav-tabs > li > a, .nav-pills > li > a , 
+.navbar-toggle, .navbar-toggle .icon-bar,
+.pager li > a, .pager li > span,
+.modal-content,
+.tooltip-inner,
+.popover, .popover-title,
+.alert,
+.thumbnail,
+.img-thumbnail,
+.label,
+.progress,
+.accordion-group,
+.carousel-indicators li,
+.form-control, .form-control.input-large, .form-control.input-small,
+.input-group-addon, .input-group-addon.input-small, .input-group-addon.input-large,
+.btn, .btn-large, .btn-small,
+.dropdown-menu, .breadcrumb, .pagination, .badge,
+.panel, .well, .well-large, .well-small {
     border-radius: 0;
+    box-shadow: none;
+}
+
+
+@media screen and (min-width: 768px) {
+	 .jumbotron {
+	 	border-radius: 0;
+    	box-shadow: none;
+	 }
 }
