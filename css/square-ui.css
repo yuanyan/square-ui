@@ -1,7 +1,8 @@
 @import "form.css";
 @import "button.css";
-@import "dropdown.css";
+@import "tab.css";
 @import "badge.css";
+@import "swipe.css";
 
 code, pre,
 .navbar, .navbar-nav > li > a, .nav-tabs > li > a, .nav-pills > li > a , 

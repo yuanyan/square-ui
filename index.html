@@ -44,7 +44,28 @@
         .form-control {
             width: auto;
         }
-
+       /* Popover 
+       --------------------------------------------------*/
+      .row .popover {
+        position: relative;
+        display: block;
+        float: left;
+        width: 260px;
+        margin: 20px;
+      }
+      /* Swipe
+       --------------------------------------------------*/
+      #swipe-demo div b {
+        display:block;
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        margin: 10px;
+        padding:100px 10px;
+        box-shadow: 0 1px #EBEBEB;
+        background: #0e83cd;
+        border: 1px solid;
+      }
       /* Icons
       -------------------------------------------------- */
 
@@ -59,6 +80,7 @@
         padding-left: 15px;
         padding-right: 15px;
       }
+
     </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
@@ -184,6 +206,14 @@
         </div>
       </div> <!-- /row -->
       
+      <div class="row">
+        <div class="col-4">
+        <button type="button" id="fat-btn" data-loading-text="Loading..." class="btn btn-primary">
+          Loading state
+        </button>
+      </div>
+      </div>
+
       <h3>Form</h3>
       <div class="row">
         <form>
@@ -367,14 +397,13 @@
         </div><!-- /btn-group -->
      </div>
 
-     <h3>Badges</h3>
+    <h3>Badges</h3>
     <div class="row">
       <ul class="nav nav-pills">
         <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
         <li><a href="#">Profile</a></li>
         <li><a href="#">Messages <span class="badge">3</span></a></li>
       </ul>
-
     </div>
 
     <div class="row">
@@ -393,10 +422,155 @@
           </a>
         </li>
       </ul>
+    </div>
+
+    <h3>Tab</h3>
+    <div class="row">
+      <div class="col-12">
+        <ul id="myTab" class="nav nav-tabs">
+          <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+          <li class=""><a href="#profile" data-toggle="tab">Profile</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class=""><a href="#dropdown1" data-toggle="tab">@fat</a></li>
+              <li class=""><a href="#dropdown2" data-toggle="tab">@mdo</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade active in" id="home">
+            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+          </div>
+          <div class="tab-pane fade" id="profile">
+            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+          </div>
+          <div class="tab-pane fade" id="dropdown1">
+            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+          </div>
+          <div class="tab-pane fade" id="dropdown2">
+            <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+          </div>
+      </div>
+     </div>
+    </div>
+    
+    <h3>Popover</h3>
+    <div class="row">
+
+      <div class="popover top">
+        <div class="arrow"></div>
+        <h3 class="popover-title">Popover top</h3>
+        <div class="popover-content">
+          <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+        </div>
+      </div>
+
+      <div class="popover right">
+        <div class="arrow"></div>
+        <h3 class="popover-title">Popover right</h3>
+        <div class="popover-content">
+          <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+        </div>
+      </div>
+
+      <div class="popover bottom">
+        <div class="arrow"></div>
+        <h3 class="popover-title">Popover bottom</h3>
+        <div class="popover-content">
+          <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+        </div>
+      </div>
+
+      <div class="popover left">
+        <div class="arrow"></div>
+        <h3 class="popover-title">Popover left</h3>
+        <div class="popover-content">
+          <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+
+    <h3>Collapse</h3>
+    <div class="row">
+      <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              Collapsible Group Item #1
+            </a>
+          </div>
+          <div id="collapseOne" class="accordion-body collapse in">
+            <div class="accordion-inner">
+              ...
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+              Collapsible Group Item #2
+            </a>
+          </div>
+          <div id="collapseTwo" class="accordion-body collapse">
+            <div class="accordion-inner">
+              ...
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+              Collapsible Group Item #3
+            </a>
+          </div>
+          <div id="collapseThree" class="accordion-body collapse">
+            <div class="accordion-inner">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Swipe</h3>
+    <div class="row">
+      <div id="swipe-demo" class='swipe'>
+        <div class='swipe-wrap'>
+          <div><b>0</b></div>
+          <div><b>1</b></div>
+          <div><b>2</b></div>
+          <div><b>3</b></div>
+          <div><b>4</b></div>
+          <div><b>5</b></div>
+          <div><b>6</b></div>
+          <div><b>7</b></div>
+          <div><b>8</b></div>
+          <div><b>9</b></div>
+          <div><b>10</b></div>
+          <div><b>11</b></div>
+          <div><b>12</b></div>
+          <div><b>13</b></div>
+          <div><b>14</b></div>
+          <div><b>15</b></div>
+          <div><b>16</b></div>
+          <div><b>17</b></div>
+          <div><b>18</b></div>
+          <div><b>19</b></div>
+          <div><b>20</b></div>
+        </div>
+      </div>
+
+      <!-- <div>
+        <button onclick='mySwipe.prev()'>prev</button> 
+        <button onclick='mySwipe.next()'>next</button>
+      </div> -->
       
     </div>
 
-        <h3>Nav</h3>
+    <h3>Nav</h3>
       <div class="row">
             <div class="navbar navbar-inverse">
               <div class="container">
@@ -632,10 +806,30 @@
     <script src="vendor/fastclick/fastclick.js"></script>
     <script src="vendor/jquery/jquery-2.0.3.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="vendor/swipe/swipe.js"></script>
     <script>
       window.addEventListener('load', function() {
         FastClick.attach(document.body);
+
       }, false);
+    </script>
+     <script>
+        $('#fat-btn').on('click', function(){
+          var $this = $(this).button('loading');
+          setTimeout(function(){ $this.button('reset')},2000)
+        })
+    </script>
+    <script>
+      window.mySwipe = Swipe($('#swipe-demo')[0], {
+        // startSlide: 4,
+        // auto: 3000,
+        // continuous: true,
+        // disableScroll: true,
+        // stopPropagation: true,
+        // callback: function(index, element) {},
+        // transitionEnd: function(index, element) {}
+      });
+
     </script>
   </body>
 </html>
