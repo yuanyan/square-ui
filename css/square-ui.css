@@ -2,6 +2,7 @@
 @import "button.css";
 @import "tab.css";
 @import "badge.css";
+@import "icon.css";
 @import "swipe.css";
 
 code, pre,
@@ -34,3 +35,4 @@ code, pre,
     	box-shadow: none;
 	 }
 }
+
