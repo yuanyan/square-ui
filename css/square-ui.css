@@ -4,6 +4,7 @@
 @import "badge.css";
 @import "icon.css";
 @import "swipe.css";
+@import "spinner.css";
 
 code, pre,
 .navbar, .navbar-nav > li > a, .nav-tabs > li > a, .nav-pills > li > a , 
@@ -30,9 +31,9 @@ code, pre,
 
 
 @media screen and (min-width: 768px) {
-	 .jumbotron {
-	 	border-radius: 0;
-    	box-shadow: none;
-	 }
+     .jumbotron {
+        border-radius: 0;
+        box-shadow: none;
+     }
 }
 
