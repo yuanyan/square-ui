@@ -1,0 +1,45 @@
+.video {
+    position: relative;
+    padding: 18px 0; 
+}
+
+video {
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+/*
+video::-webkit-media-controls-enclosure {
+    display: none;
+} */
+
+.video .controls button {
+    position: absolute;
+    bottom: 38px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: white;
+    border: 2px solid white; 
+}
+
+.video .controls button:hover {
+    cursor: pointer; 
+}
+.video .controls button.pause .glyphicon-play {
+    display: none; 
+}
+.video .controls button.pause .glyphicon-pause {
+    display: inline-block; 
+}
+.video .controls button.play .glyphicon-pause {
+    display: none; 
+}
+.video .controls button.play .glyphicon-play {
+    display: inline-block;
+    margin-right: -2px; 
+}
